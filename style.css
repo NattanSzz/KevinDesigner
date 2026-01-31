@@ -1,2 +1,96 @@
 @charset "utf-8";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font01: Arial, Verdana, sans-serif;
+}
+
+main {
+    max-width: 70vw;
+    margin: auto;
+    background-color: #000008;
+    border-radius: 15px;
+    box-shadow: 5px 10px 20px 10px #a80f2383;
+    margin-top: 20px;
+}
+
+body {
+    background-color: #DB142E;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 5vw;
+    min-height: 40vh;
+}
+
+header > picture > img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+
+header .title {
+    display: flex;
+    flex-direction: column;
+}
+
+header > div > h1 {
+    font-size: 5vw;
+    color: #DB142E;
+}
+
+header > div > h2 {
+    font-size: 4vw;
+    font-weight: normal;
+    color: white;
+}
+
+.menu {
+    background-color: #DB142E;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font01);
+}
+
+.menu > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+.menu > a:hover {
+    background-color: #da5869;
+    color: #790a19;
+    font-weight: bold;
+}
+
+.galeria {
+    column-width: 250px;
+    column-gap: 15px;
+    padding: 15px;
+}
+
+.galeria > img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    display: block;
+}
+
+.galeria > img:hover {
+    border-radius: 20px;
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
